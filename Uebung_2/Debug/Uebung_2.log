@@ -1,0 +1,24 @@
+﻿  datetime.cpp
+menu.obj : error LNK2001: Nicht aufgelöstes externes Symbol ""int choice" (?choice@@3HA)".
+main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""int __cdecl createTeam(void)" (?createTeam@@YAHXZ)" in Funktion "_main".
+    Hinweis zu Symbolen, die definiert wurden und möglicherweise übereinstimmen:
+      "void __cdecl createTeam(void)" (?createTeam@@YAXXZ)
+main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""int __cdecl deleteTeam(void)" (?deleteTeam@@YAHXZ)" in Funktion "_main".
+    Hinweis zu Symbolen, die definiert wurden und möglicherweise übereinstimmen:
+      "void __cdecl deleteTeam(void)" (?deleteTeam@@YAXXZ)
+main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""int __cdecl addPlayer(void)" (?addPlayer@@YAHXZ)" in Funktion "_main".
+    Hinweis zu Symbolen, die definiert wurden und möglicherweise übereinstimmen:
+      "void __cdecl addPlayer(void)" (?addPlayer@@YAXXZ)
+main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""int __cdecl deletePlayer(void)" (?deletePlayer@@YAHXZ)" in Funktion "_main".
+    Hinweis zu Symbolen, die definiert wurden und möglicherweise übereinstimmen:
+      "void __cdecl deletePlayer(void)" (?deletePlayer@@YAXXZ)
+main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""int __cdecl searchPlayer(void)" (?searchPlayer@@YAHXZ)" in Funktion "_main".
+    Hinweis zu Symbolen, die definiert wurden und möglicherweise übereinstimmen:
+      "void __cdecl searchPlayer(void)" (?searchPlayer@@YAXXZ)
+main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""int __cdecl sortTeams(void)" (?sortTeams@@YAHXZ)" in Funktion "_main".
+    Hinweis zu Symbolen, die definiert wurden und möglicherweise übereinstimmen:
+      "void __cdecl sortTeams(void)" (?sortTeams@@YAXXZ)
+main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""int __cdecl listTeams(void)" (?listTeams@@YAHXZ)" in Funktion "_main".
+    Hinweis zu Symbolen, die definiert wurden und möglicherweise übereinstimmen:
+      "void __cdecl listTeams(void)" (?listTeams@@YAXXZ)
+C:\Users\Zac\Desktop\code\c_study_projects\Aufgabe_2_semester_2\Uebung_2\Debug\Uebung_2.exe : fatal error LNK1120: 8 nicht aufgelöste Externe
