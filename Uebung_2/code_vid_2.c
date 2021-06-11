@@ -53,7 +53,7 @@ int getText(char *Promt, unsigned MaxLen, char **Pointer, int AllowEmpty)
         do
         {
             printf(Promt);
-            *Input = '\0'
+            *Input = '\0';
             scanf(/*Format*/ "%[^\n]", Input);
             clearBuffer();
             Len = strlen(Input);
@@ -72,7 +72,7 @@ int getText(char *Promt, unsigned MaxLen, char **Pointer, int AllowEmpty)
                     ok = 1;
                 }
             }
-        } while (ok = 1 /* condition */);
+        } while (ok != 1 /* condition */);
         
         free(Input);
         return 1;
