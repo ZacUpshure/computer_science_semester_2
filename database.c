@@ -1,13 +1,8 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <string.h>
-
 #include "datastructure.h"
-
 #include "tools.h"
-
 #include "datetime.h"
 
 void saveTeam(FILE * , sTeam);
@@ -280,9 +275,9 @@ void loadPlayer(FILE * Quelle, sPlayer * Playertoload) {
 
   } while (strncmp(Zeile, "</Player>", 7) != 0);
   free(Playertoload -> jerseychar);
-  //free(Playertoload -> Playernames);
+  free(Playertoload -> Playernames);
   free((Playertoload -> dateofbirthchar));
-  //free(Playertoload -> goalschar);
+  free(Playertoload -> goalschar);
 
 }
 
