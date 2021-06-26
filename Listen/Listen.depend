@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1624710196 source:c:\users\zac\desktop\code\c_study_projects\aufgabe_5_semester_2\listen\main.c
+	<stdio.h>
+	<stdlib.h>
+	"einfachverketteteliste.h"
+
+1624708540 c:\users\zac\desktop\code\c_study_projects\aufgabe_5_semester_2\listen\einfachverketteteliste.h
+
+1624709413 source:c:\users\zac\desktop\code\c_study_projects\aufgabe_5_semester_2\listen\einfachverketteteliste.c
+	<stdio.h>
+	<stdlib.h>
+	"einfachverketteteliste.h"
+

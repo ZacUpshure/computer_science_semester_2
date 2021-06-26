@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1624723779 source:c:\users\zac\desktop\code\c_study_projects\aufgabe_5_semester_2\quicksort_sortier_algorithmus\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1624724085 source:c:\users\zac\desktop\code\c_study_projects\aufgabe_5_semester_2\quicksort_sortier_algorithmus\quicksort.c
+	<stdio.h>
+	<stdlib.h>
+	"quicksort.h"
+
+1624724085 c:\users\zac\desktop\code\c_study_projects\aufgabe_5_semester_2\quicksort_sortier_algorithmus\quicksort.h
+
