@@ -1,37 +1,50 @@
-#include <stdio.h>
-// Das folgende definiert "Funktionszeiger" als ein Zeiger auf
-// eine Funktion, die ein char erhält und ein char zurückgibt:
-typedef char (*Funktionszeiger)(char);
-Funktionszeiger getFPtr(int);
-void druckeZeichen(Funktionszeiger FPtr, char, int);
-int main()
+// Funktionsdekleration
+
+int compareDate(TDate *date1, TDate *date2);
+void writeFile(char *Filename, TDate *A, int Anz, char **Monthnames);
+
+
+
+//Funktionsdefinition
+int compareDate(TDate *date1, TDate *date2)
 {
- Funktionszeiger FktPtr = NULL;
- druckeZeichen(getFPtr(1), 'A', 0);
- druckeZeichen(getFPtr(4), 'A', 17);
- druckeZeichen(getFPtr(2), 'b', 4);
- druckeZeichen(getFPtr(1), 'u', -1);
- druckeZeichen(getFPtr(0), 'f', -3);
- druckeZeichen(getFPtr(2), 'x', -3);
- druckeZeichen(getFPtr(3), 'x', 7);
- printf("\n");
- return 0;
+    int i;
+    i = date->Year - date2->Year;
+
+    if(i)
+    {
+        return i;
+    }
+    else
+    {
+        i = date1->Month - date2->Month;
+        if(i)
+        {
+            return i;
+        }
+        else
+        {
+            return date1->Day - date2->Day;
+        }
+    }
 }
-char nextChar(char c) { return c + 1; }
-char prevChar(char c) { return c - 1; }
-char firstChar(char c) { return 'a'; }
-Funktionszeiger getFPtr(int FktNr)
+
+void writeFile(char *Filename, TDate *A, int Anz, char **Monthnames);
 {
- switch (FktNr)
- {
- case 1: return nextChar;
- case 2: return prevChar;
- case 3: return firstChar;
- }
- return NULL;
-}
-void druckeZeichen(Funktionszeiger FPtr, char Zeichen, int Offset)
-{
- if (FPtr)
- printf("%c", FPtr(Zeichen) + Offset);
+    FILE * D = fopen(Filename, "w");
+    if(!D)
+    {
+        fprintf(stderr, "failed to open file %s\n", Filename);
+        return;
+    }
+    else
+    {
+        int i;
+        fprintf(D, "%[^\n]", Anz);
+        for(i = 0; i < Anz; i++)
+        {
+            fprintf(D, "%2i. %s %4i\n", (A + i)->Day, Monthnames[((A + i)->Month)-1], (A + i)->Year);
+        }
+        fclose(D);
+    }
 }
